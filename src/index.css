@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* HighDesign Agency Design System - Premium Black, White & Teal */
+
+@layer base {
+  :root {
+    /* Core Brand Colors - Black, White, Teal */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    
+    /* Brand Colors */
+    --black: 0 0% 0%;
+    --white: 0 0% 100%;
+    --dark-blue: 200 100% 20%;
+    --teal: 180 100% 25%;
+    --teal-light: 180 100% 35%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--black)), hsl(var(--dark-blue)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--teal)), hsl(var(--dark-blue)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--black)) 0%, hsl(var(--dark-blue)) 100%);
+    
+    /* Shadows */
+    --shadow-elegant: 0 20px 60px -10px hsl(var(--black) / 0.15);
+    --shadow-card: 0 4px 20px -2px hsl(var(--black) / 0.08);
+    --shadow-glow: 0 0 40px hsl(var(--teal) / 0.3);
+
+    /* Core shadcn tokens */
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: var(--black);
+    --primary-foreground: var(--white);
+
+    --secondary: 0 0% 96%;
+    --secondary-foreground: var(--black);
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: var(--teal);
+    --accent-foreground: var(--white);
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: var(--black);
+    --foreground: var(--white);
+
+    --card: var(--black);
+    --card-foreground: var(--white);
+
+    --popover: var(--black);
+    --popover-foreground: var(--white);
+
+    --primary: var(--white);
+    --primary-foreground: var(--black);
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: var(--white);
+
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: var(--teal);
+    --accent-foreground: var(--white);
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: var(--white);
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: var(--teal);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  .card-elegant {
+    @apply bg-card shadow-[var(--shadow-card)] border border-border/50 rounded-lg;
+  }
+  
+  .btn-primary {
+    @apply bg-black text-white hover:bg-black/90 shadow-[var(--shadow-elegant)] transition-all duration-300;
+  }
+  
+  .btn-accent {
+    @apply bg-teal text-white hover:bg-teal-light shadow-[var(--shadow-glow)] transition-all duration-300;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-[hsl(var(--black))] to-[hsl(var(--teal))] bg-clip-text text-transparent;
+  }
+  
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-up {  
+    animation: slideUp 0.6s ease-out forwards;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
