@@ -131,7 +131,7 @@ const Contact = () => {
                       href="mailto:contact@highdesignagency.com"
                       className="text-black/70 hover:text-teal transition-colors"
                     >
-                      contact@highdesignagency.com
+                      info@HighDesignAgency.co.ke
                     </a>
                   </div>
                 </div>

@@ -51,7 +51,7 @@ const Footer = () => {
 
             <div className="space-y-2">
               <p className="text-white/60 text-sm">
-                <span className="font-medium">Email:</span> contact@highdesignagency.com
+                <span className="font-medium">Email:</span> info@HighDesignAgency.co.ke
               </p>
               <p className="text-white/60 text-sm">
                 <span className="font-medium">Global Presence:</span> USA • Africa • Worldwide
