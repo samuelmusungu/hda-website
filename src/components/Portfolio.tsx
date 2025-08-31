@@ -5,7 +5,20 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { ExternalLink, Eye, X } from "lucide-react";
 
 const Portfolio = () => {
-  const [selectedProject, setSelectedProject] = useState<any>(null);
+  type Project = {
+    id: number;
+    title: string;
+    category: string;
+    description: string;
+    fullDescription: string;
+    image: string;
+    tags: string[];
+    client: string;
+    timeline: string;
+    results: string;
+  };
+
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const projects = [
     {
@@ -56,20 +69,8 @@ const Portfolio = () => {
       timeline: "2 months",
       results: "300% ROI achieved"
     },
-    {
-      id: 5,
-      title: "Healthcare Platform",
-      category: "Web Development",
-      description: "Patient management system for healthcare providers.",
-      fullDescription: "Developed a comprehensive healthcare management platform with patient records, appointment scheduling, and telemedicine capabilities. Now serving 25+ clinics across the region.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
-      tags: ["Healthcare", "Web App", "System Design"],
-      client: "MedCare Solutions",
-      timeline: "5 months",
-      results: "25+ clinics onboarded"
-    },
-    {
-      id: 6,
+
+    {      id: 5,
       title: "Startup Brand Identity",
       category: "Branding",
       description: "Complete brand identity for emerging tech startup.",
