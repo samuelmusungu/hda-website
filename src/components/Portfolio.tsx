@@ -19,72 +19,72 @@ const Portfolio = () => {
   };
 
   const projects: Project[] = [
-  {
-    id: 1,
-    title: "The Moss Karen Hotel Website",
-    category: "Web Development",
-    description: "Responsive website for a boutique hotel in Nairobi.",
-    fullDescription:
-      "Designed and deployed a modern website for The Moss Karen featuring a booking engine, gallery, and admin dashboard. Improved direct bookings by 35% within the first quarter and enhanced brand visibility in the Karen hospitality circuit.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
-    tags: ["Hospitality", "Booking System", "React"],
-    client: "The Moss Karen",
-    timeline: "6 weeks",
-    results: "35% increase in direct bookings"
-  },
-  {
-    id: 2,
-    title: "Nairobi Eats Directory",
-    category: "Digital Marketing",
-    description: "Local food discovery platform for Nairobi’s culinary scene.",
-    fullDescription:
-      "Built a searchable directory of restaurants and food vendors with SEO optimization and social media integration. Helped onboard 120+ vendors and reached 15K monthly users.",
-    image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&h=400&fit=crop",
-    tags: ["SEO", "Content Strategy", "Local Discovery"],
-    client: "Nairobi Eats",
-    timeline: "2 months",
-    results: "15K monthly active users"
-  },
-  {
-    id: 3,
-    title: "SafiSpaces Booking App",
-    category: "Mobile Design",
-    description: "Mobile-first coworking space booking experience.",
-    fullDescription:
-      "Developed a mobile-friendly app for booking shared workspaces across Nairobi. Integrated M-Pesa payments and real-time availability. Used by 3,000+ professionals monthly.",
-    image: "https://images.unsplash.com/photo-1580894732444-8ecdedc1d7d2?w=600&h=400&fit=crop", // Clean coworking desk
-    tags: ["Mobile UX", "M-Pesa", "Coworking"],
-    client: "SafiSpaces",
-    timeline: "3 months",
-    results: "3,000+ monthly bookings"
-  },
-  {
-    id: 4,
-    title: "GreenGrid Energy Campaign",
-    category: "Branding",
-    description: "Brand identity and awareness campaign for a solar startup.",
-    fullDescription:
-      "Crafted a full brand identity for GreenGrid Energy including logo, color system, and pitch deck. Campaign reached 500K impressions and helped secure a government pilot.",
-    image: "https://images.unsplash.com/photo-1584270354949-1c7c7c3e7f3c?w=600&h=400&fit=crop", // Solar panels in rural Kenya
-    tags: ["Branding", "Sustainability", "Pitch Design"],
-    client: "GreenGrid Energy",
-    timeline: "1 month",
-    results: "500K impressions, pilot secured"
-  },
-  {
-    id: 5,
-    title: "Twende CRM Dashboard",
-    category: "Software Development",
-    description: "Custom CRM for a Nairobi-based logistics firm.",
-    fullDescription:
-      "Built a modular CRM dashboard with lead tracking, automated invoicing, and performance analytics. Reduced manual reporting time by 60% and improved client retention.",
-    image: "https://images.unsplash.com/photo-1618005198919-d3d4b5a92c4a?w=600&h=400&fit=crop", // Abstract dashboard UI
-    tags: ["CRM", "Automation", "Logistics"],
-    client: "Twende Logistics",
-    timeline: "5 weeks",
-    results: "60% reduction in reporting time"
-  }
-];
+    {
+      id: 1,
+      title: "The Moss Karen Hotel Website",
+      category: "Web Development",
+      description: "Responsive website for a boutique hotel in Nairobi.",
+      fullDescription:
+        "Designed and deployed a modern website for The Moss Karen featuring a booking engine, gallery, and admin dashboard. Improved direct bookings by 35% within the first quarter and enhanced brand visibility in the Karen hospitality circuit.",
+      image: "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?auto=compress&w=600&h=400&fit=crop", // Hotel room, Pexels
+      tags: ["Hospitality", "Booking System", "React"],
+      client: "The Moss Karen",
+      timeline: "6 weeks",
+      results: "35% increase in direct bookings"
+    },
+    {
+      id: 2,
+      title: "Nairobi Eats Directory",
+      category: "Digital Marketing",
+      description: "Local food discovery platform for Nairobi’s culinary scene.",
+      fullDescription:
+        "Built a searchable directory of restaurants and food vendors with SEO optimization and social media integration. Helped onboard 120+ vendors and reached 15K monthly users.",
+      image: "https://images.pexels.com/photos/461382/pexels-photo-461382.jpeg?auto=compress&w=600&h=400&fit=crop", // Food, Pexels
+      tags: ["SEO", "Content Strategy", "Local Discovery"],
+      client: "Nairobi Eats",
+      timeline: "2 months",
+      results: "15K monthly active users"
+    },
+    {
+      id: 3,
+      title: "SafiSpaces Booking App",
+      category: "Mobile Design",
+      description: "Mobile-first coworking space booking experience.",
+      fullDescription:
+        "Developed a mobile-friendly app for booking shared workspaces across Nairobi. Integrated M-Pesa payments and real-time availability. Used by 3,000+ professionals monthly.",
+      image: "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&w=600&h=400&fit=crop", // Coworking, Pexels
+      tags: ["Mobile UX", "M-Pesa", "Coworking"],
+      client: "SafiSpaces",
+      timeline: "3 months",
+      results: "3,000+ monthly bookings"
+    },
+    {
+      id: 4,
+      title: "GreenGrid Energy Campaign",
+      category: "Branding",
+      description: "Brand identity and awareness campaign for a solar startup.",
+      fullDescription:
+        "Crafted a full brand identity for GreenGrid Energy including logo, color system, and pitch deck. Campaign reached 500K impressions and helped secure a government pilot.",
+      image: "https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&w=600&h=400&fit=crop", // Solar panels, Pexels
+      tags: ["Branding", "Sustainability", "Pitch Design"],
+      client: "GreenGrid Energy",
+      timeline: "1 month",
+      results: "500K impressions, pilot secured"
+    },
+    {
+      id: 5,
+      title: "Twende CRM Dashboard",
+      category: "Software Development",
+      description: "Custom CRM for a Nairobi-based logistics firm.",
+      fullDescription:
+        "Built a modular CRM dashboard with lead tracking, automated invoicing, and performance analytics. Reduced manual reporting time by 60% and improved client retention.",
+      image: "https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg?auto=compress&w=600&h=400&fit=crop", // Dashboard, Pexels
+      tags: ["CRM", "Automation", "Logistics"],
+      client: "Twende Logistics",
+      timeline: "5 weeks",
+      results: "60% reduction in reporting time"
+    }
+  ];
 
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
