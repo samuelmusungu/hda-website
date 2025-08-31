@@ -1,3 +1,7 @@
+// src/components/Testimonials.tsx
+
+import React from 'react';
+
 const testimonials = [
   {
     name: "Peter Witthaut, MSc BSc",
@@ -40,3 +44,24 @@ const testimonials = [
     rating: 5
   }
 ];
+
+export default function Testimonials() {
+  return (
+    <section style={{ padding: '2rem 1rem', backgroundColor: '#f9f9f9' }}>
+      <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Client Testimonials</h2>
+      <div style={{ display: 'grid', gap: '1.5rem', maxWidth: '800px', margin: '0 auto' }}>
+        {testimonials.map((t, index) => (
+          <div key={index} style={{ background: '#fff', padding: '1rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.1)' }}>
+            <p style={{ fontStyle: 'italic', marginBottom: '1rem' }}>"{t.quote}"</p>
+            <footer style={{ fontWeight: 'bold' }}>
+              — {t.name}, {t.role} ({t.company})
+            </footer>
+            <div style={{ marginTop: '0.5rem', color: '#f5a623' }}>
+              {'★'.repeat(t.rating)}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
