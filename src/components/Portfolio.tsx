@@ -28,7 +28,7 @@ const Portfolio = () => {
       description: "Responsive website for a boutique hotel in Nairobi.",
       fullDescription:
         "Designed and deployed a modern website for The Moss Karen featuring a booking engine, gallery, and admin dashboard. Improved direct bookings by 35% within the first quarter and enhanced brand visibility in the Karen hospitality circuit.",
-      image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop",
+      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
       tags: ["Hospitality", "Booking System", "React"],
       client: "The Moss Karen",
       timeline: "6 weeks",
@@ -41,7 +41,7 @@ const Portfolio = () => {
       description: "Local food discovery platform for Nairobi’s culinary scene.",
       fullDescription:
         "Built a searchable directory of restaurants and food vendors with SEO optimization and social media integration. Helped onboard 120+ vendors and reached 15K monthly users.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
+      image: "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&h=400&fit=crop",
       tags: ["SEO", "Content Strategy", "Local Discovery"],
       client: "Nairobi Eats",
       timeline: "2 months",
@@ -54,7 +54,7 @@ const Portfolio = () => {
       description: "Mobile-first coworking space booking experience.",
       fullDescription:
         "Developed a mobile-friendly app for booking shared workspaces across Nairobi. Integrated M-Pesa payments and real-time availability. Used by 3,000+ professionals monthly.",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&h=400&fit=crop",
+      image: "https://images.unsplash.com/photo-1580894894512-399d6d3f6e3b?w=600&h=400&fit=crop",
       tags: ["Mobile UX", "M-Pesa", "Coworking"],
       client: "SafiSpaces",
       timeline: "3 months",
@@ -67,7 +67,7 @@ const Portfolio = () => {
       description: "Brand identity and awareness campaign for a solar startup.",
       fullDescription:
         "Crafted a full brand identity for GreenGrid Energy including logo, color system, and pitch deck. Campaign reached 500K impressions and helped secure a government pilot.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      image: "https://images.unsplash.com/photo-1584270354949-1c7c7c3e7f3c?w=600&h=400&fit=crop",
       tags: ["Branding", "Sustainability", "Pitch Design"],
       client: "GreenGrid Energy",
       timeline: "1 month",
@@ -80,7 +80,7 @@ const Portfolio = () => {
       description: "Custom CRM for a Nairobi-based logistics firm.",
       fullDescription:
         "Built a modular CRM dashboard with lead tracking, automated invoicing, and performance analytics. Reduced manual reporting time by 60% and improved client retention.",
-      image: "https://images.unsplash.com/photo-1553484771-371a605b060b?w=600&h=400&fit=crop",
+      image: "https://images.unsplash.com/photo-1618005198919-d3d4b5a92c4a?w=600&h=400&fit=crop",
       tags: ["CRM", "Automation", "Logistics"],
       client: "Twende Logistics",
       timeline: "5 weeks",
