@@ -156,7 +156,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-black">Global Presence</h4>
-                    <span className="text-black/70">USA • Africa • Worldwide</span>
+                    <span className="text-black/70">Africa • USA • Europe • Worldwide</span>
                   </div>
                 </div>
               </div>
