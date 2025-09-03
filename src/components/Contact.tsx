@@ -21,7 +21,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to contact@highdesignagency.com
     toast({
       title: "Message Sent!",
       description: "Thank you for reaching out. We'll get back to you within 24 hours.",
@@ -136,15 +135,20 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4 p-4 rounded-lg hover:bg-black/5 transition-colors duration-300">
+                <a
+                  href="tel:+254757436746"
+                  className="flex items-center space-x-4 p-4 rounded-lg hover:bg-black/5 transition-colors duration-300"
+                >
                   <div className="w-12 h-12 bg-teal/10 rounded-full flex items-center justify-center">
                     <Phone className="w-6 h-6 text-teal" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-black">Call Us</h4>
-                    <span className="text-black/70">Available for consultations</span>
+                    <span className="text-black/70 hover:text-teal transition-colors">
+                      +254 757 436 746
+                    </span>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-center space-x-4 p-4 rounded-lg hover:bg-black/5 transition-colors duration-300">
                   <div className="w-12 h-12 bg-teal/10 rounded-full flex items-center justify-center">
