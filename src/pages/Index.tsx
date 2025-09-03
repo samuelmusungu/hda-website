@@ -7,7 +7,7 @@ import Portfolio from "@/components/Portfolio";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import ContactIcons from "@/components/ContactIcons"; // ✅ Added import
+import ContactIcons from "@/components/ContactIcons";
 
 const Index = () => {
   return (
