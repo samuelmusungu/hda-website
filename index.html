@@ -7,11 +7,13 @@
     <meta name="description" content="HighDesign Agency is a global creative agency offering branding, web design, digital marketing, and talent outsourcing services. Connecting U.S. companies with top African talent." />
     <meta name="author" content="HighDesign Agency" />
 
+    <!-- Open Graph Meta -->
     <meta property="og:title" content="HighDesign Agency - Designing Impact. Building Brands." />
     <meta property="og:description" content="Global creative agency offering branding, web design, digital marketing, and talent outsourcing services. Connecting U.S. companies with top African talent." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
+    <!-- Twitter Meta -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
@@ -19,6 +21,27 @@
 
   <body>
     <div id="root"></div>
+
+    <!-- Fallback contact links for non-JS environments -->
+    <noscript>
+      <div style="
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-family: sans-serif;
+        background: white;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      ">
+        <a href="https://wa.me/254712345678" target="_blank" style="color: #25D366; text-decoration: none;">WhatsApp</a>
+        <a href="mailto:hello@highdesign.agency" style="color: #0072c6; text-decoration: none;">Email</a>
+      </div>
+    </noscript>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

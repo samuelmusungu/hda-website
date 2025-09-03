@@ -7,6 +7,7 @@ import Portfolio from "@/components/Portfolio";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ContactIcons from "@/components/ContactIcons"; // ✅ Added import
 
 const Index = () => {
   return (
@@ -22,6 +23,7 @@ const Index = () => {
         <Contact />
       </main>
       <Footer />
+      <ContactIcons /> {/* ✅ Floating contact icons */}
     </div>
   );
 };
