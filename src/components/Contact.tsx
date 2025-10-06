@@ -23,7 +23,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Message Sent!",
-      description: "Thank you for reaching out. We'll get back to you within 24 hours.",
+      description: "Thanks for reaching out—we’ll get back to you within 24 hours.",
     });
     setFormData({ name: "", email: "", message: "" });
   };
@@ -34,12 +34,11 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-            Let's Build Something <span className="text-gradient">Great Together</span>
+            Let’s Build Something <span className="text-gradient">Unforgettable</span>
           </h2>
           <div className="w-24 h-1 bg-teal mx-auto mb-8"></div>
           <p className="text-lg text-black/70 max-w-2xl mx-auto">
-            Ready to transform your vision into reality? Get in touch with our team 
-            and let's discuss how we can help elevate your brand and business.
+            Whether you're launching a brand, scaling a platform, or curating talent—let’s talk about how we can help.
           </p>
         </div>
 
@@ -48,23 +47,23 @@ const Contact = () => {
           <div className="animate-fade-up [animation-delay:0.2s]">
             <Card className="border-none shadow-[var(--shadow-card)]">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-black mb-6">Send us a message</h3>
-                
+                <h3 className="text-2xl font-bold text-black mb-6">Send a message</h3>
+
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label className="text-sm font-medium text-black mb-2 block">
-                      Full Name *
+                      Your Name *
                     </label>
                     <Input
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      placeholder="Your Name"
+                      placeholder="Sam"
                       required
                       className="border-black/20 focus:border-teal"
                     />
                   </div>
-                  
+
                   <div>
                     <label className="text-sm font-medium text-black mb-2 block">
                       Email Address *
@@ -74,12 +73,12 @@ const Contact = () => {
                       type="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      placeholder="your@email.com"
+                      placeholder="sam@yourdomain.com"
                       required
                       className="border-black/20 focus:border-teal"
                     />
                   </div>
-                  
+
                   <div>
                     <label className="text-sm font-medium text-black mb-2 block">
                       Message *
@@ -88,14 +87,14 @@ const Contact = () => {
                       name="message"
                       value={formData.message}
                       onChange={handleInputChange}
-                      placeholder="Tell us about your project, goals, and how we can help..."
+                      placeholder="Tell us about your project, goals, and vision..."
                       required
                       className="min-h-32 border-black/20 focus:border-teal"
                     />
                   </div>
-                  
-                  <Button 
-                    type="submit" 
+
+                  <Button
+                    type="submit"
                     className="bg-teal hover:bg-teal-light text-white w-full py-6 text-lg font-semibold transition-all duration-300 hover:scale-105"
                   >
                     <Send className="w-5 h-5 mr-2" />
@@ -112,9 +111,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-2xl font-bold text-black mb-6">Get in touch</h3>
                 <p className="text-black/70 leading-relaxed mb-8">
-                  We're here to help bring your ideas to life. Whether you need branding, 
-                  web design, digital marketing, or want to connect with our global talent 
-                  network, we're ready to start the conversation.
+                  We’re here to help bring your ideas to life. Whether you need branding, web design, or want to connect with our creative network—we’re ready to start the conversation.
                 </p>
               </div>
 
@@ -125,9 +122,9 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-teal" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-black">Email Us</h4>
-                    <a 
-                      href="mailto:contact@highdesignagency.com"
+                    <h4 className="font-semibold text-black">Email</h4>
+                    <a
+                      href="mailto:info@HighDesignAgency.co.ke"
                       className="text-black/70 hover:text-teal transition-colors"
                     >
                       info@HighDesignAgency.co.ke
@@ -143,7 +140,7 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-teal" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-black">Call Us</h4>
+                    <h4 className="font-semibold text-black">Phone</h4>
                     <span className="text-black/70 hover:text-teal transition-colors">
                       +254 757 436 746
                     </span>
@@ -155,8 +152,8 @@ const Contact = () => {
                     <MapPin className="w-6 h-6 text-teal" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-black">Global Presence</h4>
-                    <span className="text-black/70">Africa • USA • Europe • Worldwide</span>
+                    <h4 className="font-semibold text-black">Presence</h4>
+                    <span className="text-black/70">Nairobi • Remote • Global</span>
                   </div>
                 </div>
               </div>
@@ -165,8 +162,7 @@ const Contact = () => {
               <div className="bg-teal/5 p-6 rounded-lg">
                 <h4 className="font-semibold text-black mb-2">Quick Response</h4>
                 <p className="text-black/70 text-sm">
-                  We typically respond to all inquiries within 24 hours. For urgent 
-                  projects, please mention it in your message for prioritized assistance.
+                  We typically respond within 24 hours. For urgent projects, mention it in your message and we’ll prioritize accordingly.
                 </p>
               </div>
 
@@ -175,11 +171,11 @@ const Contact = () => {
                 <p className="text-lg text-black/70 mb-4">
                   Ready to start your project?
                 </p>
-                <button 
+                <button
                   onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                   className="bg-black hover:bg-black/90 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
                 >
-                  Let's Build Something Great Together
+                  Let’s Build Something Unforgettable
                 </button>
               </div>
             </div>

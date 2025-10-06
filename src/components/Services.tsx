@@ -1,4 +1,4 @@
-import { Palette, Monitor, TrendingUp, Users } from "lucide-react";
+import { Palette, Monitor, TrendingUp } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Services = () => {
@@ -6,26 +6,23 @@ const Services = () => {
     {
       icon: Palette,
       title: "Branding & Identity Design",
-      description: "Complete brand development including logos, style guides, and corporate identity systems that create lasting impressions and drive recognition.",
+      description:
+        "We help brands find their voice and visual rhythm—from logos and typography to full identity systems. Whether you're launching or evolving, we build clarity and recognition into every pixel.",
       features: ["Logo Design", "Brand Guidelines", "Visual Identity", "Brand Strategy"]
     },
     {
       icon: Monitor,
       title: "UI/UX & Web Development",
-      description: "Cutting-edge web experiences with intuitive design, responsive development, and user-centered approaches that convert and engage.",
+      description:
+        "We design and build responsive websites that feel intuitive, cinematic, and fast. Every layout is crafted with purpose—balancing form, function, and flow for real-world users.",
       features: ["Web Design", "UI/UX Design", "Frontend Development", "User Research"]
     },
     {
       icon: TrendingUp,
       title: "Digital Marketing & Strategy",
-      description: "Strategic digital marketing campaigns that increase visibility, drive engagement, and deliver measurable business growth.",
+      description:
+        "We create digital strategies that connect. From SEO and content to campaign rollouts, we help brands grow with intention—driven by data, storytelling, and local relevance.",
       features: ["SEO Optimization", "Content Strategy", "Campaign Management", "Analytics & Insights"]
-    },
-    {
-      icon: Users,
-      title: "Talent Outsourcing & Remote Hiring",
-      description: "Connect with exceptional African talent for your projects while supporting global collaboration and creating meaningful opportunities.",
-      features: ["Talent Matching", "Remote Teams", "Project Management", "Quality Assurance"]
     }
   ];
 
@@ -35,19 +32,18 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-            Our <span className="text-gradient">Services</span>
+            Our <span className="text-gradient">Core Services</span>
           </h2>
           <div className="w-24 h-1 bg-teal mx-auto mb-8"></div>
           <p className="text-lg text-black/70 max-w-2xl mx-auto">
-            From concept to execution, we provide comprehensive creative and technical 
-            solutions that drive results and create lasting impact.
+            We blend design, development, and strategy to help brands move with clarity and impact. Every service is tailored to real goals, real users, and real results.
           </p>
         </div>
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {services.map((service, index) => (
-            <Card 
+            <Card
               key={index}
               className="group hover:shadow-[var(--shadow-elegant)] transition-all duration-300 hover:-translate-y-2 animate-fade-up border-none bg-white"
               style={{ animationDelay: `${index * 0.1}s` }}
@@ -57,19 +53,19 @@ const Services = () => {
                   <div className="w-16 h-16 bg-teal/10 rounded-lg flex items-center justify-center group-hover:bg-teal/20 transition-colors flex-shrink-0">
                     <service.icon className="w-8 h-8 text-teal" />
                   </div>
-                  
+
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-black mb-4">
                       {service.title}
                     </h3>
-                    
+
                     <p className="text-black/70 mb-6 leading-relaxed">
                       {service.description}
                     </p>
 
                     <div className="grid grid-cols-2 gap-2">
                       {service.features.map((feature, featureIndex) => (
-                        <div 
+                        <div
                           key={featureIndex}
                           className="text-sm text-black/60 flex items-center"
                         >
@@ -88,9 +84,9 @@ const Services = () => {
         {/* Call to Action */}
         <div className="text-center mt-16 animate-fade-up [animation-delay:0.6s]">
           <p className="text-lg text-black/70 mb-6">
-            Ready to transform your business with our expertise?
+            Have a project in mind? Let’s explore how we can bring it to life—together.
           </p>
-          <button 
+          <button
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             className="bg-teal hover:bg-teal-light text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105"
           >

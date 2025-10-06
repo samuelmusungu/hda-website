@@ -13,10 +13,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Instagram, href: "#", label: "Instagram" }
+    { icon: Linkedin, href: "https://linkedin.com/company/highdesignagency", label: "LinkedIn" },
+    { icon: Twitter, href: "https://twitter.com/highdesignke", label: "Twitter" },
+    { icon: Github, href: "https://github.com/highdesignagency", label: "GitHub" },
+    { icon: Instagram, href: "https://instagram.com/highdesign.agency", label: "Instagram" }
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -36,17 +36,16 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <img 
-                src={hdaLogo} 
-                alt="HighDesign Agency" 
+              <img
+                src={hdaLogo}
+                alt="HighDesign Agency"
                 className="h-10 w-auto"
               />
               <span className="text-xl font-bold">HighDesign Agency</span>
             </div>
-            
+
             <p className="text-white/70 mb-6 leading-relaxed">
-              A global creative agency dedicated to shaping impactful brands, 
-              empowering businesses, and connecting talent worldwide.
+              A Nairobi-rooted creative agency crafting cinematic web experiences, authentic brand systems, and scalable digital platforms for startups and global teams.
             </p>
 
             <div className="space-y-2">
@@ -54,7 +53,7 @@ const Footer = () => {
                 <span className="font-medium">Email:</span> info@HighDesignAgency.co.ke
               </p>
               <p className="text-white/60 text-sm">
-                <span className="font-medium">Global Presence:</span> USA • Africa • Worldwide
+                <span className="font-medium">Presence:</span> Nairobi • Remote • Global
               </p>
             </div>
           </div>
@@ -79,15 +78,18 @@ const Footer = () => {
           {/* Social & CTA */}
           <div className="lg:col-span-1">
             <h3 className="text-lg font-semibold mb-6">Connect With Us</h3>
-            
+
             {/* Social Links */}
             <div className="flex space-x-4 mb-8">
               {socialLinks.map((social, index) => (
                 <a
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-teal/20 transition-colors"
                   aria-label={social.label}
+                  title={social.label}
                 >
                   <social.icon className="w-5 h-5" />
                 </a>
@@ -98,9 +100,9 @@ const Footer = () => {
             <div className="bg-white/5 p-6 rounded-lg">
               <h4 className="font-semibold mb-3">Ready to Start Your Project?</h4>
               <p className="text-white/70 text-sm mb-4">
-                Let's discuss how we can help transform your vision into reality.
+                Let’s build something unforgettable—crafted with soul, scale, and cinematic precision.
               </p>
-              <button 
+              <button
                 onClick={() => scrollToSection("#contact")}
                 className="bg-teal hover:bg-teal-light text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 hover:scale-105 text-sm"
               >
@@ -118,7 +120,7 @@ const Footer = () => {
             <div className="text-white/60 text-sm">
               © {currentYear} HighDesign Agency. All Rights Reserved.
             </div>
-            
+
             <div className="flex items-center space-x-6 text-sm">
               <button className="text-white/60 hover:text-white transition-colors">
                 Privacy Policy

@@ -10,15 +10,17 @@
 
 .icon {
   font-size: clamp(2.2rem, 4vw, 3rem); /* Responsive scaling */
-  background: white;
+  background-color: white;
   border-radius: 50%;
   padding: 0.6rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
 .icon:hover {
   transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 
 .whatsapp {

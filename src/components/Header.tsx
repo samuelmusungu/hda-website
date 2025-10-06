@@ -24,10 +24,10 @@ const Header = () => {
   };
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? "bg-white/95 backdrop-blur-sm shadow-[var(--shadow-card)]" 
+        isScrolled
+          ? "bg-white/95 backdrop-blur-sm shadow-[var(--shadow-card)]"
           : "bg-transparent"
       }`}
     >
@@ -35,75 +35,40 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img 
-              src={hdaLogo} 
-              alt="HighDesign Agency" 
+            <img
+              src={hdaLogo}
+              alt="HighDesign Agency"
               className="h-10 w-auto"
             />
-            <span className={`text-xl font-bold transition-colors ${
-              isScrolled ? "text-black" : "text-white"
-            }`}>
+            <span
+              className={`text-xl font-bold transition-colors ${
+                isScrolled ? "text-black" : "text-white"
+              }`}
+            >
               HighDesign Agency
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection("home")}
-              className={`transition-colors ${
-                isScrolled 
-                  ? "text-black hover:text-teal" 
-                  : "text-white hover:text-teal"
-              }`}
-            >
-              Home
-            </button>
-            <button 
-              onClick={() => scrollToSection("about")}
-              className={`transition-colors ${
-                isScrolled 
-                  ? "text-black hover:text-teal" 
-                  : "text-white hover:text-teal"
-              }`}
-            >
-              About
-            </button>
-            <button 
-              onClick={() => scrollToSection("services")}
-              className={`transition-colors ${
-                isScrolled 
-                  ? "text-black hover:text-teal" 
-                  : "text-white hover:text-teal"
-              }`}
-            >
-              Services
-            </button>
-            <button 
-              onClick={() => scrollToSection("portfolio")}
-              className={`transition-colors ${
-                isScrolled 
-                  ? "text-black hover:text-teal" 
-                  : "text-white hover:text-teal"
-              }`}
-            >
-              Portfolio
-            </button>
-            <button 
-              onClick={() => scrollToSection("contact")}
-              className={`transition-colors ${
-                isScrolled 
-                  ? "text-black hover:text-teal" 
-                  : "text-white hover:text-teal"
-              }`}
-            >
-              Contact
-            </button>
+            {["home", "about", "services", "portfolio", "contact"].map((section) => (
+              <button
+                key={section}
+                onClick={() => scrollToSection(section)}
+                className={`transition-colors ${
+                  isScrolled
+                    ? "text-black hover:text-teal"
+                    : "text-white hover:text-teal"
+                }`}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </button>
+            ))}
           </nav>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button 
+            <Button
               onClick={() => scrollToSection("contact")}
               className="bg-teal hover:bg-teal-light text-white font-semibold"
             >
@@ -111,12 +76,13 @@ const Header = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Toggle */}
           <button
             className={`md:hidden transition-colors ${
               isScrolled ? "text-black" : "text-white"
             }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -126,37 +92,16 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 py-4 bg-white rounded-lg shadow-[var(--shadow-card)]">
             <nav className="flex flex-col space-y-4 px-4">
-              <button 
-                onClick={() => scrollToSection("home")}
-                className="text-left text-black hover:text-teal transition-colors"
-              >
-                Home
-              </button>
-              <button 
-                onClick={() => scrollToSection("about")}
-                className="text-left text-black hover:text-teal transition-colors"
-              >
-                About
-              </button>
-              <button 
-                onClick={() => scrollToSection("services")}
-                className="text-left text-black hover:text-teal transition-colors"
-              >
-                Services
-              </button>
-              <button 
-                onClick={() => scrollToSection("portfolio")}
-                className="text-left text-black hover:text-teal transition-colors"
-              >
-                Portfolio
-              </button>
-              <button 
-                onClick={() => scrollToSection("contact")}
-                className="text-left text-black hover:text-teal transition-colors"
-              >
-                Contact
-              </button>
-              <Button 
+              {["home", "about", "services", "portfolio", "contact"].map((section) => (
+                <button
+                  key={section}
+                  onClick={() => scrollToSection(section)}
+                  className="text-left text-black hover:text-teal transition-colors"
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </button>
+              ))}
+              <Button
                 onClick={() => scrollToSection("contact")}
                 className="bg-teal hover:bg-teal-light text-white mt-4"
               >

@@ -5,26 +5,26 @@ const GlobalImpact = () => {
     {
       icon: Briefcase,
       title: "Employment Opportunities",
-      description: "Creating sustainable job opportunities for talented professionals across Africa.",
-      stat: "50+ Jobs Created"
+      description: "Creating sustainable roles for talented professionals across Africa.",
+      stat: "12+ Jobs Created"
     },
     {
       icon: Globe2,
       title: "Global Collaboration",
-      description: "Bridging continents to foster international business relationships and partnerships.",
-      stat: "5 Countries Connected"
+      description: "Bridging continents to foster meaningful partnerships and shared innovation.",
+      stat: "3 Countries Connected"
     },
     {
       icon: Heart,
       title: "Community Support",
-      description: "Supporting local tech communities through mentorship and skill development programs.",
-      stat: "100+ Professionals Trained"
+      description: "Mentoring and upskilling local creatives through workshops and peer networks.",
+      stat: "30+ Professionals Engaged"
     },
     {
       icon: MapPin,
       title: "Market Expansion",
-      description: "Helping U.S. companies expand their reach while accessing world-class talent.",
-      stat: "20+ Companies Served"
+      description: "Helping brands expand their reach while tapping into world-class talent.",
+      stat: "8+ Companies Served"
     }
   ];
 
@@ -45,8 +45,7 @@ const GlobalImpact = () => {
           </h2>
           <div className="w-24 h-1 bg-accent-blue mx-auto mb-8"></div>
           <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
-            When you partner with us, you empower innovation and opportunity across continents. 
-            We're not just delivering projects – we're building bridges between cultures and creating lasting impact.
+            Partnering with HighDesign means investing in innovation, opportunity, and cultural connection. We don’t just deliver projects—we build bridges that last.
           </p>
         </div>
 
@@ -57,9 +56,7 @@ const GlobalImpact = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-6">Connecting Continents</h3>
                 <p className="text-white/80 leading-relaxed mb-6">
-                  Our unique model connects innovative U.S. companies with exceptional 
-                  African talent, creating a powerful ecosystem of collaboration that 
-                  benefits everyone involved.
+                  Our model connects forward-thinking companies with exceptional African talent—creating a vibrant ecosystem of collaboration, creativity, and growth.
                 </p>
                 <div className="flex justify-center space-x-8">
                   <div className="text-center">
@@ -81,10 +78,10 @@ const GlobalImpact = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-4">
                 {impacts.map((impact, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="bg-white/10 rounded-lg p-6 text-center hover:bg-white/15 transition-colors duration-300"
                   >
@@ -101,7 +98,7 @@ const GlobalImpact = () => {
         {/* Impact Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 animate-fade-up [animation-delay:0.4s]">
           {impacts.map((impact, index) => (
-            <div 
+            <div
               key={index}
               className="text-center group"
             >
@@ -119,10 +116,9 @@ const GlobalImpact = () => {
         <div className="text-center mt-16 animate-fade-up [animation-delay:0.6s]">
           <h3 className="text-2xl font-bold mb-4">Join Our Mission</h3>
           <p className="text-white/80 mb-8 max-w-2xl mx-auto">
-            Partner with us to create meaningful impact while achieving your business goals. 
-            Together, we can build a more connected and prosperous world.
+            Join us in shaping a more connected, creative, and prosperous future—one project, one partnership, one story at a time.
           </p>
-          <button 
+          <button
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
             className="bg-accent-blue hover:bg-accent-blue/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
           >

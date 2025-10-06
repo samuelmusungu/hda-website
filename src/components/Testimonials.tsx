@@ -1,12 +1,10 @@
-// src/components/Testimonials.tsx
-
-import React from 'react';
+import React from "react";
 
 const testimonials = [
   {
     name: "Peter Witthaut, MSc BSc",
     role: "International Development Consultant",
-    company: "Formerly GIZ",
+    company: "GIZ",
     quote:
       "HighDesign Agency’s modular systems and strategic dashboards reflect a deep understanding of development sector needs. Their work aligns with the kind of impact-driven digital transformation I’ve seen succeed across Africa.",
     rating: 5
@@ -47,20 +45,36 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section style={{ padding: '2rem 1rem', backgroundColor: '#f9f9f9' }}>
-      <h2 style={{ textAlign: 'center', marginBottom: '2rem' }}>Client Testimonials</h2>
-      <div style={{ display: 'grid', gap: '1.5rem', maxWidth: '800px', margin: '0 auto' }}>
-        {testimonials.map((t, index) => (
-          <div key={index} style={{ background: '#fff', padding: '1rem', borderRadius: '8px', boxShadow: '0 2px 6px rgba(0,0,0,0.1)' }}>
-            <p style={{ fontStyle: 'italic', marginBottom: '1rem' }}>"{t.quote}"</p>
-            <footer style={{ fontWeight: 'bold' }}>
-              — {t.name}, {t.role} ({t.company})
-            </footer>
-            <div style={{ marginTop: '0.5rem', color: '#f5a623' }}>
-              {'★'.repeat(t.rating)}
+    <section id="testimonials" className="py-20 bg-white">
+      <div className="container mx-auto px-6">
+        {/* Header */}
+        <div className="text-center mb-16 animate-fade-up">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
+            What Our Clients Say
+          </h2>
+          <div className="w-24 h-1 bg-teal mx-auto mb-8"></div>
+          <p className="text-lg text-black/70 max-w-2xl mx-auto">
+            We’ve worked with farmers, developers, consultants, and hospitality leaders—each with a unique story. Here’s what they had to say.
+          </p>
+        </div>
+
+        {/* Testimonials Grid */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto animate-fade-up [animation-delay:0.2s]">
+          {testimonials.map((t, index) => (
+            <div
+              key={index}
+              className="bg-black/5 p-6 rounded-xl shadow-[var(--shadow-card)] hover:shadow-lg transition-shadow duration-300"
+            >
+              <p className="italic text-black/80 mb-4">“{t.quote}”</p>
+              <footer className="font-semibold text-black">
+                — {t.name}, {t.role} ({t.company})
+              </footer>
+              <div className="mt-2 text-yellow-500 text-sm">
+                {"★".repeat(t.rating)}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
