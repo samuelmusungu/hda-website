@@ -1,31 +1,32 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Services from "@/components/Services";
-import WhyChooseUs from "@/components/WhyChooseUs";
-import Portfolio from "@/components/Portfolio";
-import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
-import ContactIcons from "@/components/ContactIcons";
+import Hero from "@/components/home/Hero";
+import Ticker from "@/components/home/Ticker";
+import Manifesto from "@/components/home/Manifesto";
+import ServicesBento from "@/components/home/ServicesBento";
+import Process from "@/components/home/Process";
+import FeaturedWork from "@/components/home/FeaturedWork";
+import TalentBand from "@/components/home/TalentBand";
+import Testimonials from "@/components/shared/Testimonials";
+import FaqSection from "@/components/shared/FaqSection";
+import CtaBand from "@/components/shared/CtaBand";
 
-const Index = () => {
-  return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Services />
-        <WhyChooseUs />
-        <Portfolio />
-        <Testimonials />
-        <Contact />
-      </main>
-      <Footer />
-      <ContactIcons /> {/* ✅ Floating contact icons */}
-    </div>
-  );
-};
+const HomePage = () => (
+  <>
+    <Hero />
+    <Ticker />
+    <Manifesto />
+    <ServicesBento />
+    <Process />
+    <FeaturedWork />
+    <TalentBand />
+    <Testimonials />
+    <FaqSection />
+    <CtaBand
+      title="Ready to build"
+      accent="something sharp?"
+      description="Tell us about the product, the team or the brand. We'll reply within a working day with a clear next step."
+      secondary={{ label: "Explore services", to: "/services" }}
+    />
+  </>
+);
 
-export default Index;
+export default HomePage;

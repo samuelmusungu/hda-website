@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+				display: ['"Instrument Serif"', 'ui-serif', 'Georgia', 'serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -31,6 +35,7 @@ export default {
 				'dark-blue': 'hsl(var(--dark-blue))',
 				teal: 'hsl(var(--teal))',
 				'teal-light': 'hsl(var(--teal-light))',
+				'teal-glow': 'hsl(var(--teal-glow))',
 				
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
@@ -100,5 +105,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config;

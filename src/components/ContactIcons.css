@@ -4,29 +4,30 @@
   right: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  z-index: 1000;
+  gap: 0.9rem;
+  z-index: 40;
 }
 
-.icon {
-  font-size: clamp(2.2rem, 4vw, 3rem); /* Responsive scaling */
+.contact-icons .icon {
+  font-size: clamp(2rem, 4vw, 2.6rem);
   background-color: white;
   border-radius: 50%;
   padding: 0.6rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
+  display: block;
 }
 
-.icon:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+.contact-icons .icon:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
 
-.whatsapp {
-  color: #25D366;
+.contact-icons .whatsapp {
+  color: #25d366;
 }
 
-.email {
-  color: #0072c6;
+.contact-icons .email {
+  color: hsl(180 100% 25%);
 }

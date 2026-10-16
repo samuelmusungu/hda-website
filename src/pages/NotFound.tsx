@@ -1,27 +1,21 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import PageHero from "@/components/layout/PageHero";
 
-const NotFound = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location.pathname
-    );
-  }, [location.pathname]);
-
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
-      </div>
-    </div>
-  );
-};
+const NotFound = () => (
+  <PageHero
+    eyebrow="Error 404"
+    title={
+      <>
+        This page <span className="italic text-teal-glow">doesn't exist</span>.
+      </>
+    }
+    description="The link may be broken, or the page may have moved. Head back to the studio and find what you're looking for."
+    crumbs={[{ label: "Home", to: "/" }, { label: "Not found" }]}
+  >
+    <Link to="/" className="inline-flex items-center gap-2 rounded-full bg-teal hover:bg-teal-light px-7 py-4 font-semibold transition-colors">
+      Back to home
+    </Link>
+  </PageHero>
+);
 
 export default NotFound;
